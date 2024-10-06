@@ -7,14 +7,15 @@ import React, { useState } from "react";
 // define type of state
 
 type loanData={
-    price:string;
+    price:number;
     year:number;
     interestRate:number;
 };
 
 
 const Code3=()=>{
-    const [data,setdata]=useState<loanData>({price:'',year:0,interestRate:0})
+    const [data,setdata]=useState<loanData>({price:0,year:0,interestRate:0})
+    const [result,setresult]=useState<number>(0);
 
     const handleAddData=(e:React.ChangeEvent<HTMLInputElement>):void=>{
          const{name,value}=e.target;
@@ -23,6 +24,8 @@ const Code3=()=>{
 
 
     const handlesubmit=(e:React.FormEvent<HTMLFormElement>):void=>{
+           let cal=data.price*data.interestRate*data.year;
+           setresult(cal);
             e.preventDefault();
             console.log(data);
     }
@@ -39,6 +42,13 @@ const Code3=()=>{
                     Calculate EMI
                 </button>
            </form>
+
+           {
+            result && 
+            <div>
+                 <h1>{result}</h1>
+            </div>
+           }
         </div>
     )
 };
