@@ -7,10 +7,11 @@ import Code4 from './compoent/Code4';
 import Code6 from './compoent/Code6';
 import Code7 from './compoent/Code7';
 import Code8 from './compoent/Code8';
+import Code9 from './compoent/Code9';
 function App() {
   return (
     <div className="App">
-      <Code8/>
+      <Code9/>
     </div>
   );
 }
