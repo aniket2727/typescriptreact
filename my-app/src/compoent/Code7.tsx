@@ -18,11 +18,17 @@ const Code7=()=>{
 
 
     const handleshowans=(index:number):void=>{
-          const updatedflags=[...flag];
-          updatedflags[index]=!updatedflags[index];
-          setflag(updatedflags);
-          console.log("flag",flag);
-          console.log("updated flag",updatedflags)
+          if(flag[index]){
+              const updateflags=[...flag];
+              updateflags[index]=!updateflags[index];
+              setflag(updateflags);
+          }
+          else{
+            const updatedflags=[...flag];
+            updatedflags[index]=!updatedflags[index];
+            setflag(updatedflags);
+          }
+         
     }
     return(
         <div>
