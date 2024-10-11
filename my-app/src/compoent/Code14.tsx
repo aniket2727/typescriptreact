@@ -13,7 +13,19 @@ const Curring=()=>{
 
 
     const multi10=curringmain(5);
-    console.log(multi10(5))
+    console.log(multi10(5));
+
+
+
+    function curringstring(x:string){
+        return function(y:string){
+            return `the composed string is ${x}  ${y}`
+        }
+    }
+
+
+    const a=curringstring('name');
+    console.log(a('my name is aniket kadam'));
 
     return(
         <div>
