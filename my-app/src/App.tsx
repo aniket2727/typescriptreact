@@ -12,10 +12,14 @@ import Code10 from './compoent/Code10';
 import Code11 from './compoent/Code11';
 import Code12 from './compoent/Code12';
 import Maincomponentforhoc from './compoent/Code13';
+import Curring from './compoent/Code14';
+
+
+
 function App() {
   return (
     <div className="App">
-      <Maincomponentforhoc/>
+       <Curring/>
     </div>
   );
 }
