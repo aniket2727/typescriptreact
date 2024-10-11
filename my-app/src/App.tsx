@@ -11,11 +11,11 @@ import Code9 from './compoent/Code9';
 import Code10 from './compoent/Code10';
 import Code11 from './compoent/Code11';
 import Code12 from './compoent/Code12';
-
+import Maincomponentforhoc from './compoent/Code13';
 function App() {
   return (
     <div className="App">
-      <Code12/>
+      <Maincomponentforhoc/>
     </div>
   );
 }
