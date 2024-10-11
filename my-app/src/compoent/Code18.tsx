@@ -23,7 +23,7 @@ const Code18 = () => {
         age:'10',details:{
             post:'maneger'
         }
-    }]
+    }];
 
     // console.log(data.details.post)
      const a:{[key:number]:string}={}
