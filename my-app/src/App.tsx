@@ -16,10 +16,11 @@ import Curring from './compoent/Code14';
 import Closures from './compoent/Code15';
 import Code16 from './compoent/Code16';
 import Code17 from './compoent/Code17';
+import Code18 from './compoent/Code18';
 function App() {
   return (
     <div className="App">
-       <Code17/>
+       <Code18/>
     </div>
   );
 }
