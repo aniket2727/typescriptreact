@@ -13,13 +13,13 @@ import Code11 from './compoent/Code11';
 import Code12 from './compoent/Code12';
 import Maincomponentforhoc from './compoent/Code13';
 import Curring from './compoent/Code14';
-
-
+import Closures from './compoent/Code15';
+import Code16 from './compoent/Code16';
 
 function App() {
   return (
     <div className="App">
-       <Curring/>
+       <Code16/>
     </div>
   );
 }
